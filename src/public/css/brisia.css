@@ -1471,8 +1471,8 @@ a {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template-areas: ". Area Area-2";
-  -ms-grid-columns: 0.5fr 30px 1.25fr 30px 1fr;
-  grid-template-columns: 0.5fr 1.25fr 1fr;
+  -ms-grid-columns: 0.5fr 30px 1.5fr 30px 1fr;
+  grid-template-columns: 0.5fr 1.5fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   color: #fff;
@@ -1548,6 +1548,7 @@ a {
 .text-block-14 {
   color: #b2b2b2;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .footer--logos {
@@ -1564,8 +1565,20 @@ a {
 }
 
 .site--hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
   height: 85vh;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .site--description {
@@ -2014,6 +2027,29 @@ a {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.disclaimer {
+  position: relative;
+  z-index: 1;
+  margin-left: 10px;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  color: #fff;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.disclaimer.negro {
+  color: #707070;
+  font-size: 12px;
+}
+
+.bold-text {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
